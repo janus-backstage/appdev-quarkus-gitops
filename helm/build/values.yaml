@@ -1,0 +1,21 @@
+app:
+  name: appdev-quarkus
+  namespace: appdev-quarkus-dev
+  cluster: .apps.ocp4.quitala.eu
+
+git:
+  branch: main
+  repo: https://github.com/janus-backstage/appdev-quarkus.git
+  org: janus-backstage
+  name: appdev-quarkus
+  host: github.com
+  token: ''
+  webhookSecret: ''
+
+
+image:
+  registry: Openshift
+  organization: 
+  host: image-registry.openshift-image-registry.svc:5000
+  name: appdev-quarkus
+  tag: latest
