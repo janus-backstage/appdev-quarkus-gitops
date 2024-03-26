@@ -12,7 +12,7 @@ spec:
       interceptors:
         - params:
             - name: filter
-              value: has(body.commits) && body.object_kind == 'push'
+              value: has(body.commits) &&  header.match('X-GitHub-Event', 'push')
             - name: overlays
               value: null
           ref:
